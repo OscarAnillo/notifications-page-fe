@@ -7,4 +7,110 @@
 
 .App {
   text-align: center;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  min-height: 100vh;
+}
+.container {
+  width: 90%;
+  margin: 1em auto;
+  height: 95vh;
+}
+
+/* Notification Component */
+.notification {
+  border: none;
+  border-radius: 10px;
+  text-align: left;
+  position: relative;
+  background-color: #fff;
+}
+
+.unread {
+  border-radius: 10px;
+  text-align: left;
+  background: hsl(210, 60%, 98%);
+  position: relative;
+}
+
+.notification-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  margin-bottom: 1em;
+  padding: 1.1em 0;
+}
+
+.notification-row > div:nth-child(1) {
+  width: 17%;
+}
+.notification-row > div:nth-child(2) {
+  width: 85%;
+}
+
+.notification-row img {
+  width: 40px;
+}
+
+.notification-row .text { 
+  font-weight: 500;
+  font-size: 1rem;
+  color: rgb(94, 98, 107);
+}
+
+.notification-row .activity-post {
+  color: rgb(98, 104, 116);
+  font-weight: 800;
+}
+.notification-row .game {
+  color: rgb(27, 48, 91);
+}
+
+.notification-row .time {
+  font-weight: 500;
+  color: rgb(207, 211, 220);
+}
+
+.notification-row .red-dot {
+  display: inline-block;
+  background: hsl(1, 90%, 64%);
+  width: 8px;
+  height: 8px;
+  border-radius: 10px;
+  margin-left: .5em;
+}
+
+.message  {
+  border: 1px solid #eee;
+  border-radius: 5px;
+  width: 70%;
+  margin: 0 auto 1em auto;
+  padding: .5em;
+}
+.message p {
+  color: rgb(99, 100, 104);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+
+/* NotificationCount component */
+.count {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1em 0;
+}
+
+.count span {
+  border: none;
+  border-radius: 5px;
+  padding: .1em .5em;
+  background-color: hsl(219, 85%, 26%);
+  color: #fff;
+}
+
+.count p {
+  color: rgb(98, 104, 116);
+  font-size: 14px;
 }
