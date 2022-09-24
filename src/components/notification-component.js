@@ -20,7 +20,7 @@ export default function SimpleNotification({
             </div>
             <div>
               <p>
-                <strong>{name}</strong> <span className="text">{text}</span>
+                <strong className="name">{name}</strong> <span className="text">{text}</span>
                 <span className="activity-post">
                   {activity_post}
                   <span className="game">{activity_game}</span>
@@ -43,7 +43,7 @@ export default function SimpleNotification({
             </div>
             <div>
               <p>
-                <strong>{name}</strong> <span className="text">{text}</span>
+                <strong className="name">{name}</strong> <span className="text">{text}</span>
                 <span className="activity-post">
                   {activity_post}
                   <span className="game">{activity_game}</span>
@@ -53,7 +53,7 @@ export default function SimpleNotification({
               </p>
             </div>
             {picture ? (
-              <div>
+              <div className="picture-chess">
                 <img src={picture} alt="" />
               </div>
             ) : (
