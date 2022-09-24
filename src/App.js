@@ -42,6 +42,7 @@ function App() {
           activity_post={item.activity_post}
           activity_game={item.activity_game}
           message={item.message}
+          picture={item.picture}
           timeStamp={item.time_stamp}
           readMessage={item.readMessage}
           key={item.name}

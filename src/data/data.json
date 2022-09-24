@@ -6,6 +6,7 @@
       "activity_post": " My first tournament today!",
       "activity-game": "", 
       "message": "",
+      "picture": "",
       "time_stamp": "1m ago",
       "readMessage": true
     },
@@ -16,6 +17,7 @@
       "activity_post": "",
       "activity-game": "",
       "message": "",
+      "picture": "",
       "time_stamp": "5m ago",
       "readMessage": true
     },
@@ -26,6 +28,7 @@
       "activity_post": "",
       "activity_game" : " Chess Club",
       "message": "",
+      "picture": "",
       "time_stamp": "1 day ago",
       "readMessage": true
     },
@@ -36,6 +39,7 @@
       "activity_post": "",
       "activity_game": "", 
       "message": "Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.",
+      "picture": "",
       "time_stamp": "5 days ago",
       "readMessage": false
     },
@@ -46,17 +50,18 @@
       "activity_post": "",
       "activity_game": "", 
       "message": "",
+      "picture": "/images/image-chess.webp",
       "time_stamp": "1 week ago",
       "readMessage": false
     },
     {
       "name": "Nathan Peterson",
       "avatar": "/images/avatar-nathan-peterson.webp",
-      "text":
-        "reacted to your recent post",
+      "text": "reacted to your recent post",
       "activity_post": " 5 end-game strategies to increase your win rate",
       "activity_game": "", 
       "message": "",
+      "picture": "",
       "time_stamp": "2 weeks ago",
       "readMessage": false
     },
@@ -67,6 +72,7 @@
       "activity_post": "",
       "activity_game": " Chess Club", 
       "message": "",
+      "picture": "",
       "time_stamp": "2 weeks ago",
       "readMessage": false
     }

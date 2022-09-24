@@ -1,4 +1,3 @@
-
 export default function SimpleNotification({
   readMessageState,
   avatar,
@@ -7,17 +6,14 @@ export default function SimpleNotification({
   activity_post,
   activity_game,
   message,
+  picture,
   timeStamp,
   readMessage,
 }) {
-  
-
   return (
     <div>
       {readMessage ? (
-        <div
-          className={`${readMessageState ? "notification" : "unread"}`}
-        >
+        <div className={`${readMessageState ? "notification" : "unread"}`}>
           <div className="notification-row">
             <div>
               <img src={avatar} alt="" />
@@ -25,8 +21,11 @@ export default function SimpleNotification({
             <div>
               <p>
                 <strong>{name}</strong> <span className="text">{text}</span>
-                <span className="activity-post">{activity_post}<span className="game">{activity_game}</span> 
-                {!readMessageState ? <div className="red-dot"></div> : " "}</span>
+                <span className="activity-post">
+                  {activity_post}
+                  <span className="game">{activity_game}</span>
+                  {!readMessageState ? <div className="red-dot"></div> : " "}
+                </span>
                 <br />
                 <span className="time">{timeStamp}</span>
               </p>
@@ -45,14 +44,25 @@ export default function SimpleNotification({
             <div>
               <p>
                 <strong>{name}</strong> <span className="text">{text}</span>
-                <span className="activity-post">{activity_post}<span className="game">{activity_game}</span></span>
+                <span className="activity-post">
+                  {activity_post}
+                  <span className="game">{activity_game}</span>
+                </span>
                 <br />
                 <span className="time">{timeStamp}</span>
               </p>
             </div>
+            {picture ? (
+              <div>
+                <img src={picture} alt="" />
+              </div>
+            ) : (
+              " "
+            )}
           </div>
+
           <div className={`${message ? "message" : null}`}>
-              <p>{message}</p>
+            <p>{message}</p>
           </div>
         </div>
       )}
