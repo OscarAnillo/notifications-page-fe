@@ -24,7 +24,7 @@ export default function SimpleNotification({
                 <span className="activity-post">
                   {activity_post}
                   <span className="game">{activity_game}</span>
-                  {!readMessageState ? <div className="red-dot"></div> : " "}
+                  {!readMessageState ? <span className="red-dot"></span> : " "}
                 </span>
                 <br />
                 <span className="time">{timeStamp}</span>
